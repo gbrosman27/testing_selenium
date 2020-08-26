@@ -20,13 +20,13 @@ user_message = chrome_browser.find_element_by_id("user-message")
 user_message.clear()
 
 # Populate message box.
-user_message.send_keys("I am extra cool!")
+user_message.send_keys("This is pretty cool!")
 
 show_message_button.click()
 output_message = chrome_browser.find_element_by_id("display")
 
 # Checks that the text is in the output message, else throw error.
-assert "I am extra cool" in output_message.text
+assert "This is pretty cool!" in output_message.text
 
 
 # chrome_browser.close()
